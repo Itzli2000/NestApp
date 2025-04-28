@@ -17,13 +17,19 @@ npm install -g @nestjs/cli
 ```
 docker compose up -d
 ```
-5. Levantar la aplicación
+5. Crear un archivo __.env__ a partir del archivo __.env.template__ en la raíz del proyecto con el siguiente contenido:
 ```
-yarn start:dev
+MONGODB_URI=mongodb://localhost:27017/nest-pokemon
+PORT=3000
+DEFAULT_LIMIT=10
 ```
 6. Reconstruir la base de datos con el seed
 ```
 http://localhost:3000/api/v2/seed
+```
+7. Levantar la aplicación
+```
+yarn start:dev
 ```
 
 ## Stack usado
